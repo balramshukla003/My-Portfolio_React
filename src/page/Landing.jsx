@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import '../css/Landing.css';
 import { Link } from 'react-router-dom';
+import Avtar from '../images/avatar.jpg'
 
 
 const Landing = () => {
@@ -29,7 +30,7 @@ const Landing = () => {
                     <Link to="/projects" style={{ textDecoration: "none" }} className="cta-button">View My Work</Link>
                 </div>
                 <div className="hero-image">
-                    <img src="src\images\avatar.jpg" alt="Professional Work" />
+                    <img src={Avtar} alt="Professional Work" />
                 </div>
             </header>
 
@@ -38,7 +39,7 @@ const Landing = () => {
                 <div className="about-container">
 
                     <div className="about-image-land">
-                        <img src="src\images\avatar.jpg" alt="" />
+                        <img src={Avtar} alt="" />
                     </div>
 
                     <div className="about-text">

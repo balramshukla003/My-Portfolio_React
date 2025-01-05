@@ -2,6 +2,15 @@ import { Link } from 'react-router-dom';
 import '../css/Project.css';
 import React, { useEffect } from 'react'
 
+import Project1_1 from "../images/Screenshot 2025-01-04 195640.png"
+import Project1_2 from "../images/Screenshot 2025-01-04 195359.png"
+import Project2_1 from "../images/Screenshot 2025-01-05 134854.png"
+import Project2_2 from "../images/Screenshot 2025-01-05 134927.png"
+import Project3_1 from "../images/Screenshot 2025-01-05 135807.png"
+import Project3_2 from "../images/Screenshot 2025-01-05 135837.png"
+import Project4_1 from "../images/Screenshot 2025-01-05 141626.png"
+import Project4_2 from "../images/Screenshot 2025-01-05 142302.png"
+
 const Project = () => {
    
     useEffect(() => {
@@ -13,8 +22,8 @@ const Project = () => {
             <h1 className='heading'>Project Showcase</h1>
             <div className="project-container">
                 <div className="project-image">
-                    <img style={{ marginBottom: '20px' }} src="src\images\Screenshot 2025-01-04 195640.png" alt="Project Image" />
-                    <img src="src\images\Screenshot 2025-01-04 195359.png" alt="Project Image" />
+                    <img style={{ marginBottom: '20px' }} src={Project1_1} alt="Project Image" />
+                    <img src={Project1_2} alt="Project Image" />
                 </div>
                 <div className="project-details">
                     <h2>1. Market Place</h2>
@@ -29,8 +38,9 @@ const Project = () => {
             </div>
             <div className="project-container">
                 <div className="project-image">
-                    <img style={{ marginBottom: '20px' }} src="src/images/Screenshot 2025-01-05 134854.png" alt="Project Image" />
-                    <img src="src\images\Screenshot 2025-01-05 134927.png" alt="Project Image" />
+                    <img style={{ marginBottom: '20px' }} 
+                    src={Project2_1} alt="Project Image" />
+                    <img src={Project2_2} alt="Project Image" />
                 </div>
                 <div className="project-details">
                     <h2>2. InnoTech</h2>
@@ -45,8 +55,8 @@ const Project = () => {
             </div>
             <div className="project-container">
                 <div className="project-image">
-                    <img style={{ marginBottom: '20px' }} src="src\images\Screenshot 2025-01-05 135807.png" alt="Project Image" />
-                    <img src="src\images\Screenshot 2025-01-05 135837.png" alt="Project Image" />
+                    <img style={{ marginBottom: '20px' }} src={Project3_1} alt="Project Image" />
+                    <img src={Project3_2} alt="Project Image" />
                 </div>
                 <div className="project-details">
                     <h2>3. Resturant Mangement System</h2>
@@ -63,8 +73,8 @@ const Project = () => {
             </div>
             <div className="project-container">
                 <div className="project-image">
-                    <img style={{ marginBottom: '20px' }} src="src\images\Screenshot 2025-01-05 141626.png" alt="Project Image" />
-                    <img src="src\images\Screenshot 2025-01-05 142302.png" alt="Project Image" />
+                    <img style={{ marginBottom: '20px' }} src={Project4_1} alt="Project Image" />
+                    <img src={Project4_2} alt="Project Image" />
                 </div>
                 <div className="project-details">
                     <h2>4. Student Database Management</h2>
