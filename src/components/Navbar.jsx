@@ -35,10 +35,6 @@ const Navbar = () => {
                 <li><Link to="/#about" onClick={() => handleScrollToSection('about')}>About</Link></li>
                 <li><Link to="/projects">Projects</Link></li>
                 <li><a href='https://drive.google.com/file/d/1BXWhuhYjth-3-OsaklS8I5uUuiWs6uEJ/view?usp=sharing'>Resume</a></li>
-                {/* Additional links for mobile */}
-                <li className="mobile-link"><Link to="/contact">Contact</Link></li>
-                <li className="mobile-link"><Link to="/services">Services</Link></li>
-                <li className="mobile-link"><Link to="/blog">Blog</Link></li>
             </ul>
         </nav>
     );
