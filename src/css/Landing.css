@@ -1,0 +1,187 @@
+/* Hero Section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem;
+    background-color: #232946;
+    color: #ffffff;
+    height: 100vh;
+    animation: fadeIn 2s ease-in-out;
+    /* Entry animation */
+}
+.hero-image img {
+    width: 100%;
+    height: auto;
+    max-width: 1200px; /* Adjust this value for your desired max size */
+    border-radius: 8px; /* Optional: for rounded corners */
+  }
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #eebbc3;
+    animation: slideIn 1.5s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.cta-button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    background-color: #eebbc3;
+    color: #232946;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ffffff;
+    color: #232946;
+    transform: scale(1.1);
+}
+
+.about-section {
+    padding: 4rem 2rem;
+    background-color: #e6ecf2;
+    animation: slideUp 2s ease-out;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    /* Adjusted gap for better spacing */
+}
+
+.about-text {
+    flex: 1;
+    /* Ensures the text takes up available space */
+    color: #2d3142;
+    padding: 1rem;
+}
+
+.about-text h2 {
+    font-size: 2.5rem;
+    color: #232946;
+    margin-bottom: 1.2rem;
+}
+
+.about-text p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.about-text span {
+    color: #eebbc3;
+    font-weight: bold;
+}
+
+.about-text strong {
+    color: #232946;
+}
+
+.about-text ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.about-text ul li {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    color: #2d3142;
+}
+
+.cta-link {
+    display: inline-block;
+    font-size: 1.1rem;
+    color: #ffffff;
+    background-color: #232946;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.cta-link:hover {
+    background-color: #eebbc3;
+    color: #232946;
+    transform: scale(1.05);
+}
+
+/* Image Styling */
+.about-image-land {
+    flex: 1;
+    /* Ensures the image takes up available space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.about-image-land img {
+    width: 100%;
+    max-width: 300px;
+    /* Sets a max size for the image */
+    border-radius: 50%;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        /* Stacks elements on smaller screens */
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-text {
+        max-width: 100%;
+        /* Ensures text takes full width */
+        padding: 0;
+    }
+
+    .about-image-land {
+        padding: 0;
+    }
+
+    .about-image-land img {
+        max-width: 150px;
+        /* Reduces image size for smaller screens */
+    }
+}

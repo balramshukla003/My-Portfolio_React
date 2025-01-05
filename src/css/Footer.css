@@ -1,0 +1,99 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    transition: all 0.5s ease;
+    transform: translateY(50px);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-links,
+.footer-social,
+.footer-contact {
+    width: 30%;
+}
+
+.footer h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #07c5a8c2;
+}
+
+.footer-links ul {
+    list-style-type: none;
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #f39c12;
+}
+
+.social-icons {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2px 5px;
+    gap: 5px;
+}
+
+.social-icons a {
+    margin-right: 15px;
+    color: #fff;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.social-icons .facebook:hover,
+.github:hover,
+.whatsapp:hover {
+    background-color: #3b5998;
+    color: #fff;
+}
+
+.social-icons .twitter:hover,
+.linkedin:hover {
+    background-color: #1da1f2;
+    color: #fff;
+}
+
+.social-icons .instagram:hover,
+.telegram:hover {
+    background-color: #e4405f;
+    color: #fff;
+}
+
+.footer-contact p {
+    margin-bottom: 8px;
+}
+
+.mail {
+    color: #01c228;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+}
+
+.mail:hover {
+    transform: scale(1.1) !important;
+    color: #f39c12;
+}
