@@ -1,0 +1,40 @@
+.coming-soon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+.coming-soon h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    color: #007bff;
+}
+
+.coming-soon p {
+    font-size: 1.5rem;
+    max-width: 600px;
+    
+}
+/* Home button */
+.homeButton {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    color: rgb(4, 81, 65);
+    text-decoration: none;
+    border-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.homeButton:hover {
+    background-color: #5a9;
+    color: #fff;
+    transform: scale(1.05);
+}
