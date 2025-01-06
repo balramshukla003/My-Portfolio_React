@@ -86,14 +86,29 @@
     margin-bottom: 8px;
 }
 
-.mail {
-    color: #01c228;
-    text-decoration: none;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: larger;
+.mailA {
+    display: none;
+    font-size: 18px;
+    color: #f3df5f;
 }
 
-.mail:hover {
+.mailB {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+.mailB:hover {
     transform: scale(1.1) !important;
     color: #f39c12;
+}
+
+@media (max-width: 768px) {
+    .mailB {
+        display: none;
+    }
+
+    .mailA {
+        display: block;
+    }
 }

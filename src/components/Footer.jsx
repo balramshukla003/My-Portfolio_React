@@ -34,8 +34,9 @@ const Footer = () => {
 
                 <div className="footer-contact">
                     <h3>Contact me</h3>
-                    <p className='Mailp'>Email:<Link to="mailto:balramshukla003@gmail.com" className='mail'> balramshukla003@gmail.com</Link></p>
                     <p>Phone: +91 9026050563</p>
+                    <a className='mailB' href="mailto:balramshukla003@gmail.com">Email: balramshukla003@gmail.com</a>
+                    <a className='mailA' href="mailto:balramshukla003@gmail.com">Email</a>
                 </div>
             </div >
         </footer >
