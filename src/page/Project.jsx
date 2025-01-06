@@ -12,7 +12,7 @@ import Project4_1 from "../images/Screenshot 2025-01-05 141626.png"
 import Project4_2 from "../images/Screenshot 2025-01-05 142302.png"
 
 const Project = () => {
-   
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
@@ -38,8 +38,8 @@ const Project = () => {
             </div>
             <div className="project-container">
                 <div className="project-image">
-                    <img style={{ marginBottom: '20px' }} 
-                    src={Project2_1} alt="Project Image" />
+                    <img style={{ marginBottom: '20px' }}
+                        src={Project2_1} alt="Project Image" />
                     <img src={Project2_2} alt="Project Image" />
                 </div>
                 <div className="project-details">
@@ -49,7 +49,7 @@ const Project = () => {
                     <p style={{ display: 'flex' }}><span style={{ fontWeight: 'bold' }}>Frontend:</span>&nbsp; HTML, CSS, JS </p>
                     <p style={{ display: 'flex', marginTop: '-10px' }}><span style={{ fontWeight: 'bold' }}>Backend:</span>&nbsp; Node.js, Express.js</p>
                     <p style={{ display: 'flex', marginTop: '-10px' }}><span style={{ fontWeight: 'bold' }}>Database:</span>&nbsp; MySQL</p>
-                    <a href="https://github.com/balramshukla003/Quiz_App-InnoTech"  style={{ color: "white", backgroundColor: '#393737' }} className="btn">GitHub</a>
+                    <a href="https://github.com/balramshukla003/Quiz_App-InnoTech" style={{ color: "white", backgroundColor: '#393737' }} className="btn">GitHub</a>
                     <a href="" className="btn">LinkedIN</a>
                 </div>
             </div>
@@ -84,7 +84,9 @@ const Project = () => {
                         restaurant details, and access contact information.The website focuses on responsive
                         design and providing an optimal user experience across devices.</p>
                     <p style={{ textDecoration: 'underline' }}>Technology Used</p>
-                    <p style={{ display: 'flex' }}><span style={{ fontWeight: 'bold' }}>Frontend:</span>&nbsp; HTML, CSS, JS </p>
+                    <p style={{ display: 'flex' }}><span style={{ fontWeight: 'bold' }}>Frontend:</span>&nbsp; Java, Java-AWT, Java-Swing </p>
+                    <p style={{ display: 'flex', marginTop: '-10px' }}><span style={{ fontWeight: 'bold' }}>Backend:</span>&nbsp;Java, JDBC, Drivers</p>
+                    <p style={{ display: 'flex', marginTop: '-10px' }}><span style={{ fontWeight: 'bold' }}>Database:</span>&nbsp; MySQL</p>
                     <a href='https://github.com/balramshukla003/JAVA-DBMS-project' style={{ color: "white", backgroundColor: '#393737' }} className="btn">GitHub</a>
                     <a href='https://www.linkedin.com/posts/balram-shukla-3189b6269_educationtechnology-schoolmanagement-studentrecords-activity-7176246651689349120-enKu?utm_source=share&utm_medium=member_desktop' className="btn">LinkedIN</a>
                 </div>
