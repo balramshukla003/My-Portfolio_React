@@ -34,7 +34,7 @@ const Navbar = () => {
                 <li><Link to="/" onClick={() => handleScrollToTop()}>Home</Link></li>
                 <li><Link to="/#about" onClick={() => handleScrollToSection('about')}>About</Link></li>
                 <li><Link to="/projects">Projects</Link></li>
-                <li><a href='https://drive.google.com/file/d/1BXWhuhYjth-3-OsaklS8I5uUuiWs6uEJ/view?usp=sharing'>Resume</a></li>
+                <li><a href='https://drive.google.com/file/d/1__ely_CUuNw7KIJM8E7UdblmdLVwbtAR/view?usp=sharing'>Resume</a></li>
             </ul>
         </nav>
     );
