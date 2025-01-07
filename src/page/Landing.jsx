@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import '../css/Landing.css';
 import { Link } from 'react-router-dom';
 import Avtar from '../images/avatar.jpg'
+import Profile from '../images/img Balram .jpg';
 
 
 const Landing = () => {
@@ -39,7 +40,7 @@ const Landing = () => {
                 <div className="about-container">
 
                     <div className="about-image-land">
-                        <img src={Avtar} alt="" />
+                        <img src={Profile} alt="" />
                     </div>
 
                     <div className="about-text">

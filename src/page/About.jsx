@@ -1,5 +1,5 @@
 import '../css/About.css';
-import Profile from '../images/avatar.jpg';
+import Profile from '../images/img Balram .jpg';
 import React, { useEffect } from 'react';
 
 const About = () => {
