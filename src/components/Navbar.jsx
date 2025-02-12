@@ -39,7 +39,7 @@ const Navbar = () => {
             <ul className={`nav-links ${menuActive ? 'active' : ''}`}>
                 <li><Link to="/" onClick={() => handleScrollToTop()}>Home</Link></li>
                 <li><Link to="/skill" onClick={() => handleScrollToTop()}>Skills</Link></li>
-                <li><Link to="/#about" onClick={() => handleScrollToSection('about')}>About</Link></li>
+                <li><Link to="/about/detail" onClick={() => handleScrollToSection('about')}>About</Link></li>
                 <li><Link to="/projects">Projects</Link></li>
                 <li><Link to="/certificate" onClick={() => handleScrollToTop()}>Certificates</Link></li>
                 <li><a href={cvURL}>Resume</a></li>

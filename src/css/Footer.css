@@ -21,11 +21,11 @@
     width: 30%;
 }
 
-.footer h3 {
+.footer h2 {
     margin-bottom: 10px;
     font-size: 20px;
     font-weight: bold;
-    color: #07c5a8c2;
+    color: #f2f7f6c2;
 }
 
 .footer-links ul {
@@ -46,21 +46,12 @@
     color: #f39c12;
 }
 
-.social-icons {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 2px 5px;
-    gap: 5px;
-}
 
 .social-icons a {
-    margin-right: 15px;
     color: #fff;
     text-decoration: none;
-    padding: 8px;
-    border-radius: 50%;
-    font-size: 18px;
-    transition: background 0.3s, color 0.3s;
+    padding: 10px 10px 0px 00px;
+    font-size: x-large;
 }
 
 .social-icons .facebook:hover,

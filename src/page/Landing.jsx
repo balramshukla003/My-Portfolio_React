@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import '../css/Landing.css';
 import { Link } from 'react-router-dom';
 import Avtar from '../images/avatar.jpg'
-import Profile from '../images/img Balram .jpg';
 
 
 const Landing = () => {
@@ -20,59 +19,37 @@ const Landing = () => {
 
     return (
         <div className="landing-page">
-            <div className="landingInner">
 
+            <header className="hero-section">
+                <div className="hero-image">
+                    <img src={Avtar} alt="Professional Work" />
+                </div>
+                <div className="content">
+                    <h1>Welcome to My Portfolio</h1>
+                    <p>
+                        Hi, I'm a passionate <span>Software Developer</span> and <span>Web Designer</span>,
+                        crafting visually stunning and user-friendly applications.
+                    </p>
+                    <Link to="/projects" style={{ textDecoration: "none" }} className="cta-button">View My Work</Link>
+                </div>
+            </header>
 
-                <header className="hero-section">
-                    <div className="content">
-                        <h1>Welcome to My Portfolio</h1>
-                        <p>
-                            Hi, I'm a passionate <span>Software Developer</span> and <span>Web Designer</span>,
-                            crafting visually stunning and user-friendly applications.
-                        </p>
-                        <Link to="/projects" style={{ textDecoration: "none" }} className="cta-button">View My Work</Link>
-                    </div>
-                    <div className="hero-image">
-                        <img src={Avtar} alt="Professional Work" />
-                    </div>
-                </header>
+            {/* <main className="main">
+                About Me
+                I’m Balram Shukla, a passionate fresher skilled in Full-Stack and Software Development. With expertise in modern tools like HTML, CSS, JavaScript, React.js, Node.js, and MySQL, I focus on creating user-friendly web applications and scalable software solutions.
 
-                <main className='main'>
+                I combine a keen eye for design with strong problem-solving skills to build intuitive interfaces and robust back-end systems. My goal is to deliver clean, efficient, and impactful solutions while continuously learning and growing as a developer.
 
-                </main>
+                Skills:
+                ✔️Web Designing
+                ✔️Full-Stack Development
+                ✔️Problem Solving and Debugging
 
-                <section className="about-section" id="about">
-                    <div className="about-container">
+                I'm excited about collaborating on innovative projects and contributing to impactful solutions that make a difference. Let's create something amazing together!
 
-                        <div className="about-text">
-                            <h2>About Me</h2>
-                            <p>
-                                I’m <span style={{ color: "blueviolet" }}>Balram Shukla</span>, a passionate fresher skilled in Full-Stack and Software Development. With expertise in modern tools like HTML, CSS, JavaScript, React.js, Node.js, and MySQL, I focus on creating user-friendly web applications and scalable software solutions.
-                            </p>
-                            <p>
-                                I combine a keen eye for design with strong problem-solving skills to build intuitive interfaces and robust back-end systems. My goal is to deliver clean, efficient, and impactful solutions while continuously learning and growing as a developer.
-                            </p>
-                            <p>
-                                <strong>Skills:</strong>
-                                <ul>
-                                    <li>✔️Web Designing</li>
-                                    <li>✔️Full-Stack Development</li>
-                                    <li>✔️Problem Solving and Debugging</li>
-                                </ul>
-                            </p>
-                            <p>
-                                I'm excited about collaborating on innovative projects and contributing to impactful solutions that make a difference. Let's create something amazing together!
-                            </p>
-                            <Link to="/about/detail" className="cta-link">Know more</Link>
+                Know more
+            </main> */}
 
-                        </div>
-                    </div>
-
-
-
-                </section>
-
-            </div>
         </div >
     );
 };
