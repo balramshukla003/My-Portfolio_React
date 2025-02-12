@@ -38,7 +38,7 @@ const Skill = () => {
         visible: (i) => ({
             opacity: 1,
             x: 0,
-            transition: { delay: i * 0.3, type: 'spring', stiffness: 50 },
+            transition: { delay: i * .5, type: 'spring', stiffness: 50 },
         }),
     };
 
