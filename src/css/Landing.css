@@ -1,21 +1,42 @@
-/* Hero Section */
+.landing-page {
+    width: 100%;
+    background-color: #232946;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 100px;
+}
+
+.landingInner {
+    width: 85%;
+}
+
 .hero-section {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 3rem;
-    background-color: #232946;
+    justify-content: center;
     color: #ffffff;
-    height: 100vh;
+    height: 90vh;
     animation: fadeIn 2s ease-in-out;
-    /* Entry animation */
 }
+
+.hero-image {
+    width: 400px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 5px solid rgb(178, 169, 169);
+    animation: fadeIn 3s ease-out;
+}
+
 .hero-image img {
     width: 100%;
     height: auto;
-    max-width: 1200px; /* Adjust this value for your desired max size */
-    border-radius: 8px; /* Optional: for rounded corners */
-  }
+    max-width: 1200px;
+    border-radius: 10px;
+}
+.about-section{
+    border-radius: 20px;
+}
 
 @keyframes fadeIn {
     from {
@@ -73,7 +94,7 @@
 
 .about-section {
     padding: 4rem 2rem;
-    background-color: #e6ecf2;
+    background-color:#cdd8e4;
     animation: slideUp 2s ease-out;
 }
 
@@ -83,12 +104,10 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 2rem;
-    /* Adjusted gap for better spacing */
 }
 
 .about-text {
     flex: 1;
-    /* Ensures the text takes up available space */
     color: #2d3142;
     padding: 1rem;
 }
@@ -143,10 +162,8 @@
     transform: scale(1.05);
 }
 
-/* Image Styling */
 .about-image-land {
     flex: 1;
-    /* Ensures the image takes up available space */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -156,23 +173,19 @@
 .about-image-land img {
     width: 100%;
     max-width: 300px;
-    /* Sets a max size for the image */
     border-radius: 50%;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .about-container {
         flex-direction: column;
-        /* Stacks elements on smaller screens */
         align-items: center;
         text-align: center;
     }
 
     .about-text {
         max-width: 100%;
-        /* Ensures text takes full width */
         padding: 0;
     }
 
@@ -180,8 +193,11 @@
         padding: 0;
     }
 
+    .hero-image {
+        display: none;
+    }
+
     .about-image-land img {
         max-width: 150px;
-        /* Reduces image size for smaller screens */
     }
 }

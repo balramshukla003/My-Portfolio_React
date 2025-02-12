@@ -5,8 +5,9 @@ import Footer from './components/Footer.jsx';
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import About from './page/About.jsx';
-import Details from './page/Details.jsx';
 import Project from './page/Project.jsx';
+import Certificates from './page/Certificate.jsx';
+import Skill from './page/Skill.jsx';
 
 function App() {
   return (
@@ -17,8 +18,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/about/detail" element={<About />} />
-          <Route path="/details" element={<Details />} />
           <Route path='/projects' element={<Project />} />
+          <Route path='/skill' element={<Skill />} />
+          <Route path='certificate' element={<Certificates />} />
         </Routes>
         <Footer />
       </Router>

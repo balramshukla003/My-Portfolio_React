@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react'
 import '../css/Footer.css'
 import socialLinks from '../api/Social-Links';
 import { Link } from 'react-router-dom';
+import Icons from './Icons.jsx';
+
 const Footer = () => {
     const handleScrollToTop = () => {
         window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
@@ -12,10 +14,10 @@ const Footer = () => {
                 <div className="footer-links">
                     <h3>Important Links</h3>
                     <ul>
-                        <li><Link to="/"  onClick={() => handleScrollToTop()}>Home</Link></li>
-                        <li><Link to="/about/detail"  onClick={() => handleScrollToTop()}>About</Link></li>
-                        <li><a href='https://drive.google.com/file/d/1BXWhuhYjth-3-OsaklS8I5uUuiWs6uEJ/view?usp=sharing'  onClick={() => handleScrollToTop()}>Resume</a></li>
-                        <li><Link to="/projects"  onClick={() => handleScrollToTop()}>Projects</Link></li>
+                        <li><Link to="/" onClick={() => handleScrollToTop()}>Home</Link></li>
+                        <li><Link to="/about/detail" onClick={() => handleScrollToTop()}>About</Link></li>
+                        <li><a href='https://drive.google.com/file/d/1BXWhuhYjth-3-OsaklS8I5uUuiWs6uEJ/view?usp=sharing' onClick={() => handleScrollToTop()}>Resume</a></li>
+                        <li><Link to="/projects" onClick={() => handleScrollToTop()}>Projects</Link></li>
                     </ul>
                 </div>
 
@@ -26,7 +28,7 @@ const Footer = () => {
                         <Link to={socialLinks.twitter} className="social-icon twitter">Twitter</Link>
                         <Link to={socialLinks.instagram} className="social-icon instagram">Instagram</Link>
                         <Link to={socialLinks.github} className="social-icon github">GitHub</Link>
-                        <Link to={socialLinks.linkedin} className="social-icon linkedin">LinkedIn</Link>
+                        <Link to={socialLinks.linkedin} className="social-icon linkedin"><Icons.Linkedin /></Link>
                         <Link to={socialLinks.telegram} className="social-icon telegram">Telegram</Link>
                         <Link to={socialLinks.whatsapp} className="social-icon whatsapp">WhatsApp</Link>
                     </div>
