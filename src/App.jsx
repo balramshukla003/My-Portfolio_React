@@ -8,6 +8,7 @@ import About from './page/About.jsx';
 import Project from './page/Project.jsx';
 import Certificates from './page/Certificate.jsx';
 import Skill from './page/Skill.jsx';
+import SkillShowcase from './page/example.jsx';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path='/projects' element={<Project />} />
           <Route path='/skill' element={<Skill />} />
           <Route path='certificate' element={<Certificates />} />
+          <Route path='/ex' element={<SkillShowcase />} />
         </Routes>
         <Footer />
       </Router>

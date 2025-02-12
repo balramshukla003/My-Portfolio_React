@@ -1,40 +1,31 @@
-import React from 'react'
-import '../css/Skill.css'
-
-const Skill = () => {
+const SkillShowcase = () => {
     const skills = {
         frontend: [
-            { name: 'React', icon: '⚛️' },
-            { name: 'HTML', icon: '📄' },
-            { name: 'CSS', icon: '🎨' },
-            { name: 'JSX', icon: '🔷' }
+            { name: 'React', icon: '⚛️', expertise: 'Advanced' },
+            { name: 'HTML5', icon: '📄', expertise: 'Expert' },
+            { name: 'CSS3', icon: '🎨', expertise: 'Expert' },
+            { name: 'JSX', icon: '🔷', expertise: 'Advanced' }
         ],
         backend: [
-            { name: 'Node.js', icon: '🟢' },
-            { name: 'Express', icon: '🚀' },
-            { name: 'REST API', icon: '🔗' }
+            { name: 'Node.js', icon: '🟢', expertise: 'Advanced' },
+            { name: 'Express', icon: '🚀', expertise: 'Proficient' },
+            { name: 'REST API', icon: '🔗', expertise: 'Advanced' }
         ],
         database: [
-            { name: 'MySQL', icon: '🛢️' },
-            { name: 'MongoDB', icon: '🍃' },
+            { name: 'PostgreSQL', icon: '🐘', expertise: 'Proficient' },
+            { name: 'MongoDB', icon: '🍃', expertise: 'Intermediate' },
+            { name: 'Redis', icon: '🗃️', expertise: 'Basic' }
         ],
         languages: [
-            { name: 'JavaScript', icon: '📜' },
-            { name: 'Java', icon: '♨️' },
-            { name: 'Python', icon: '🐍' },
-            { name: 'C++', icon: 'C++' }
-        ],
-        developmentEnvironments: [
-            { name: 'VS Code', icon: '🆚' },
-            { name: 'IntelliJ IDEA', icon: '👨🏻‍💻' },
-            { name: 'Chrome Dev Tool', icon: '🔧' },
-            { name: 'Github', icon: '</>' }
+            { name: 'JavaScript', icon: '📜', expertise: 'Expert' },
+            { name: 'TypeScript', icon: '📘', expertise: 'Proficient' },
+            { name: 'Python', icon: '🐍', expertise: 'Intermediate' }
         ]
     };
 
     return (
         <div style={styles.container}>
-            <h2 style={styles.title}>My Expertise </h2>
+            <h2 style={styles.title}>Full-Stack Development Skills</h2>
             <div style={styles.grid}>
                 {/* Frontend Section */}
                 <div style={styles.section}>
@@ -44,7 +35,10 @@ const Skill = () => {
                             <div key={index} style={styles.card}>
                                 <span style={styles.icon}>{skill.icon}</span>
                                 <h4 style={styles.skillName}>{skill.name}</h4>
-                                <div>
+                                <div style={{
+                                    ...styles.expertise,
+                                    backgroundColor: getExpertiseColor(skill.expertise)
+                                }}>
                                     {skill.expertise}
                                 </div>
                             </div>
@@ -60,7 +54,10 @@ const Skill = () => {
                             <div key={index} style={styles.card}>
                                 <span style={styles.icon}>{skill.icon}</span>
                                 <h4 style={styles.skillName}>{skill.name}</h4>
-                                <div>
+                                <div style={{
+                                    ...styles.expertise,
+                                    backgroundColor: getExpertiseColor(skill.expertise)
+                                }}>
                                     {skill.expertise}
                                 </div>
                             </div>
@@ -76,7 +73,10 @@ const Skill = () => {
                             <div key={index} style={styles.card}>
                                 <span style={styles.icon}>{skill.icon}</span>
                                 <h4 style={styles.skillName}>{skill.name}</h4>
-                                <div>
+                                <div style={{
+                                    ...styles.expertise,
+                                    backgroundColor: getExpertiseColor(skill.expertise)
+                                }}>
                                     {skill.expertise}
                                 </div>
                             </div>
@@ -92,24 +92,10 @@ const Skill = () => {
                             <div key={index} style={styles.card}>
                                 <span style={styles.icon}>{skill.icon}</span>
                                 <h4 style={styles.skillName}>{skill.name}</h4>
-                                <div >
-                                    {skill.expertise}
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-
-
-
-                <div style={styles.section}>
-                    <h3 style={styles.sectionTitle}>🛠 Tools </h3>
-                    <div style={styles.itemsContainer}>
-                        {skills.developmentEnvironments.map((skill, index) => (
-                            <div key={index} style={styles.card}>
-                                <span style={styles.icon}>{skill.icon}</span>
-                                <h4 style={styles.skillName}>{skill.name}</h4>
-                                <div >
+                                <div style={{
+                                    ...styles.expertise,
+                                    backgroundColor: getExpertiseColor(skill.expertise)
+                                }}>
                                     {skill.expertise}
                                 </div>
                             </div>
@@ -122,13 +108,24 @@ const Skill = () => {
 };
 
 // Helper function for expertise colors
+const getExpertiseColor = (level) => {
+    const colors = {
+        'Basic': '#ff6b6b',
+        'Intermediate': '#4ecdc4',
+        'Proficient': '#45b7d1',
+        'Advanced': '#54a0ff',
+        'Expert': '#2ecc71'
+    };
+    return colors[level] || '#999';
+};
 
 // Styling
 const styles = {
     container: {
-        margin: '2rem',
+        maxWidth: '1200px',
+        margin: '2rem auto',
         padding: '2rem',
-        backgroundColor: '#232946',
+        backgroundColor: '#1a1a1a',
         borderRadius: '15px',
         boxShadow: '0 10px 30px rgba(0,0,0,0.3)'
     },
@@ -149,7 +146,7 @@ const styles = {
         gap: '2rem'
     },
     section: {
-        backgroundColor: '#cdd8e4',
+        backgroundColor: '#2d2d2d',
         padding: '1.5rem',
         borderRadius: '12px',
         transition: 'transform 0.3s ease',
@@ -158,11 +155,11 @@ const styles = {
         }
     },
     sectionTitle: {
-        color: '#232946',
+        color: '#fff',
         fontSize: '1.5rem',
         marginBottom: '1rem',
         paddingBottom: '0.5rem',
-        borderBottom: '2px solid #232946'
+        borderBottom: '2px solid #00ff88'
     },
     itemsContainer: {
         display: 'flex',
@@ -170,7 +167,7 @@ const styles = {
         gap: '1rem'
     },
     card: {
-        backgroundColor: '#232946',
+        backgroundColor: '#333',
         padding: '1rem',
         borderRadius: '8px',
         display: 'flex',
@@ -200,4 +197,4 @@ const styles = {
     }
 };
 
-export default Skill
+export default SkillShowcase;

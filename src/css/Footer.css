@@ -50,27 +50,12 @@
 .social-icons a {
     color: #fff;
     text-decoration: none;
-    padding: 10px 10px 0px 00px;
+    padding: 10px;
     font-size: x-large;
 }
 
-.social-icons .facebook:hover,
-.github:hover,
-.whatsapp:hover {
-    background-color: #3b5998;
-    color: #fff;
-}
-
-.social-icons .twitter:hover,
-.linkedin:hover {
-    background-color: #1da1f2;
-    color: #fff;
-}
-
-.social-icons .instagram:hover,
-.telegram:hover {
-    background-color: #e4405f;
-    color: #fff;
+.social-icons a:hover {
+    background-color: #f39c12;
 }
 
 .footer-contact p {
