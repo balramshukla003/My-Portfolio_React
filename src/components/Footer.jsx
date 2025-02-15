@@ -23,13 +23,13 @@ const Footer = () => {
                 <div className="footer-social">
                     <h2>Follow me on</h2>
                     <div className="social-icons">
-                        <Link to={socialLinks.facebook} className="social-icon facebook"><Icons.Facebook /></Link>
-                        <Link to={socialLinks.twitter} className="social-icon twitter"><Icons.Twitter /></Link>
-                        <Link to={socialLinks.instagram} className="social-icon instagram"><Icons.Instagram /></Link>
-                        <Link to={socialLinks.github} className="social-icon github"><Icons.Github /></Link>
-                        <Link to={socialLinks.linkedin} className="social-icon linkedin"><Icons.Linkedin /></Link>
-                        <Link to={socialLinks.telegram} className="social-icon telegram"><Icons.Telegram /></Link>
-                        <Link to={socialLinks.whatsapp} className="social-icon whatsapp"><Icons.Whatsapp /></Link>
+                        <Link to={socialLinks.facebook} className="social-icon-facebook"><Icons.Facebook /></Link>
+                        <Link to={socialLinks.twitter} className="social-icon-twitter"><Icons.Twitter /></Link>
+                        <Link to={socialLinks.instagram} className="social-icon-instagram"><Icons.Instagram /></Link>
+                        <Link to={socialLinks.github} className="social-icon-github"><Icons.Github /></Link>
+                        <Link to={socialLinks.linkedin} className="social-icon-linkedin"><Icons.Linkedin /></Link>
+                        <Link to={socialLinks.telegram} className="social-icon-telegram"><Icons.Telegram /></Link>
+                        <Link to={socialLinks.whatsapp} className="social-icon-whatsapp"><Icons.Whatsapp /></Link>
                     </div>
                 </div>
 

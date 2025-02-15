@@ -5,9 +5,9 @@ import Avtar from '../images/avatar.jpg'
 
 
 const Landing = () => {
-
+  
     useEffect(() => {
-
+        document.title = "Balram Shukla | Home";
         const hash = window.location.hash;
         if (hash) {
             const section = document.querySelector(hash);

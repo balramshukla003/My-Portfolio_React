@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import '../css/Skill.css';
 
 const Skill = () => {
+    
+    useEffect(() => {
+        document.title = "Balram Shukla | Skills";
+    }, []);
+
     const skills = {
         frontend: [
             { name: 'React', icon: '⚛️' },
@@ -68,12 +73,12 @@ const Skill = () => {
                             {category === 'frontend'
                                 ? '🖥️ Frontend'
                                 : category === 'backend'
-                                ? '⚙️ Backend'
-                                : category === 'database'
-                                ? '💾 Database'
-                                : category === 'languages'
-                                ? '📚 Languages'
-                                : '🛠 Tools'}
+                                    ? '⚙️ Backend'
+                                    : category === 'database'
+                                        ? '💾 Database'
+                                        : category === 'languages'
+                                            ? '📚 Languages'
+                                            : '🛠 Tools'}
                         </h3>
                         <div style={styles.itemsContainer}>
                             {skills[category].map((skill, index) => (

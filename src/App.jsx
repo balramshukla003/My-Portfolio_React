@@ -8,7 +8,8 @@ import About from './page/About.jsx';
 import Project from './page/Project.jsx';
 import Certificates from './page/Certificate.jsx';
 import Skill from './page/Skill.jsx';
-import SkillShowcase from './page/example.jsx';
+import CertificatesPage from './page/example.jsx';
+
 
 function App() {
   return (
@@ -18,11 +19,11 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Landing />} />
-          <Route path="/about/detail" element={<About />} />
+          <Route path="/about" element={<About />} />
           <Route path='/projects' element={<Project />} />
           <Route path='/skill' element={<Skill />} />
           <Route path='certificate' element={<Certificates />} />
-          <Route path='/ex' element={<SkillShowcase />} />
+          <Route path='/ex' element={<CertificatesPage />} />
         </Routes>
         <Footer />
       </Router>
