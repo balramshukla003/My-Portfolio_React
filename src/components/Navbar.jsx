@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import '../css/Navbar.css';
 
 const Navbar = () => {
-    
+
     const cvURL = "https://drive.google.com/file/d/1__ely_CUuNw7KIJM8E7UdblmdLVwbtAR/view?usp=sharing"
     const [menuActive, setMenuActive] = useState(false);
 
@@ -18,13 +18,13 @@ const Navbar = () => {
         setMenuActive(false);
     };
 
-    const handleScrollToSection = (sectionId) => {
-        const section = document.getElementById(sectionId);
-        if (section) {
-            section.scrollIntoView({ behavior: 'smooth' });
-        }
-        setMenuActive(false);
-    };
+    const CheckMenuActive = () => {
+        if (menuActive) {
+            handleScrollToTop();
+            toggleMenu();
+        } else handleScrollToTop()
+    }
+
 
     return (
         <nav className="navbar">
@@ -38,11 +38,15 @@ const Navbar = () => {
                 <div className={`bar ${menuActive ? 'rotate-reverse' : ''}`}></div>
             </div>
             <ul className={`nav-links ${menuActive ? 'active' : ''}`}>
-                <li><Link to="/" onClick={() => handleScrollToTop()}>Home</Link></li>
-                <li><Link to="/skill" onClick={() => handleScrollToTop()}>Skills</Link></li>
-                <li><Link to="/about" onClick={() => handleScrollToSection('about')}>About</Link></li>
-                <li><Link to="/projects">Projects</Link></li>
-                <li><Link to="/certificate" onClick={() => handleScrollToTop()}>Certificates</Link></li>
+                <li><Link to="/" onClick={() => { CheckMenuActive() }}
+                >Home</Link></li>
+                <li><Link to="/skill" onClick={() => { CheckMenuActive() }}
+                >Skills</Link></li>
+                <li><Link to="/about" onClick={() => { CheckMenuActive() }}
+                >About</Link></li>
+                <li><Link to="/projects" onClick={() => { CheckMenuActive() }}>Projects</Link></li>
+                <li><Link to="/certificate" onClick={() => { CheckMenuActive() }}
+                >Certificates</Link></li>
                 <li><a href={cvURL}>Resume</a></li>
             </ul>
         </nav>

@@ -14,7 +14,7 @@ const Footer = () => {
                     <h2>Important Links</h2>
                     <ul>
                         <li><Link to="/" onClick={() => handleScrollToTop()}>Home</Link></li>
-                        <li><Link to="/about/detail" onClick={() => handleScrollToTop()}>About</Link></li>
+                        <li><Link to="/about" onClick={() => handleScrollToTop()}>About</Link></li>
                         <li><a href='https://drive.google.com/file/d/1BXWhuhYjth-3-OsaklS8I5uUuiWs6uEJ/view?usp=sharing' onClick={() => handleScrollToTop()}>Resume</a></li>
                         <li><Link to="/projects" onClick={() => handleScrollToTop()}>Projects</Link></li>
                     </ul>
