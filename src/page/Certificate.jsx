@@ -6,6 +6,7 @@ import certificates from '../api/Certificates.json';
 
 export default function Certificates() {
 
+
   useEffect(() => {
     document.title = "Balram Shukla | Certficates";
   }, []);
@@ -64,7 +65,7 @@ export default function Certificates() {
             className="certificate-card"
           >
             <div className="certificate-image">
-              <img src={cert.image} alt={cert.title} style={{cursor:"pointer"}} onClick={() => {
+              <img src={cert.image} alt={cert.title} style={{ cursor: "pointer" }} onClick={() => {
                 window.open(cert.link, "_blank");
               }} />
             </div>
