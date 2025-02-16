@@ -22,6 +22,7 @@ import AccentureForage from "../images/AccentureUk Forage.png";
 import EmailInfys from "../images/Email infys.png";
 import SEInternHackerRank from "../images/SE Intern HackerRank.png";
 
+import Project5 from "../images/Screenshot 2025-01-05 141626.png"
 
 export default function Certificates() {
 
@@ -31,7 +32,7 @@ export default function Certificates() {
       issuer: "TCS iON",
       date: "15 Jan 2025",
       link: "https://drive.google.com/file/d/1rt5FleSpSSiMq-Ygai0XWzSZVAml-wsr/view?usp=sharing",
-      image: tcs,
+      image: Project5,
     },
     {
       title: "AI for Beginners",

@@ -17,6 +17,8 @@ import AccentureForage from "../images/AccentureUk Forage.png";
 import EmailInfys from "../images/Email infys.png";
 import SEInternHackerRank from "../images/SE Intern HackerRank.png";
 
+import Project5 from "../images/Screenshot 2025-01-05 141626.png"
+
 
 
 const Images = {
