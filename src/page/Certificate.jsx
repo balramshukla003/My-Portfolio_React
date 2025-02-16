@@ -6,7 +6,6 @@ import { FaCertificate } from 'react-icons/fa';
 import AIHp from "../images/AI Hp.png";
 import tcs from "../images/tcsIon.png";
 import SEInfys from "../images/SE infys.png";
-import SEForage from "../images/SE Forage.png";
 import JavaBasic from "../images/Java basic.png";
 import GoogleApplied from "../images/Google Aplied.png";
 import CodeSoft from "../images/codesoft.png";
@@ -53,7 +52,7 @@ export default function Certificates() {
       issuer: "Forage",
       date: "13 Aug 2024",
       link: "https://drive.google.com/file/d/1FBb8A88iIAGA6VARFH0ECmgAJYfHVUa9/view?usp=sharing",
-      image: SEForage,
+      image: ,
     },
     {
       title: "Java (Basic)",
