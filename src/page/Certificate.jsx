@@ -1,11 +1,138 @@
 import { useRef, useEffect } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { FaCertificate } from 'react-icons/fa';
-
-import certificates from '../api/Certificates.json';
+import Image from '../components/Images';
 
 export default function Certificates() {
 
+  const certificates = [
+    {
+      title: "Career Edge - IT for Non-IT",
+      issuer: "TCS iON",
+      date: "15 Jan 2025",
+      link: "https://drive.google.com/file/d/1rt5FleSpSSiMq-Ygai0XWzSZVAml-wsr/view?usp=sharing",
+      image: Image.tcs
+    },
+    {
+      title: "AI for Beginners",
+      issuer: "HP Foundation",
+      date: "01 Jan 2025",
+      link: "https://www.life-global.org/certificate/1f417f12-0930-40d7-a4f4-d58b63a81f6a",
+      image: Image.AIhp
+    },
+    {
+      title: "Software Engineering and Agile Software Development",
+      issuer: "Infosys Springboard",
+      date: "01 Aug 2024",
+      link: "https://drive.google.com/file/d/1iaf4TirL-PsGA5HVnf4onU5ZnEUMtfLn/view?usp=sharing",
+      image: Image.SEInfys,
+    },
+    {
+      title: "Software Engineering Job Simulation",
+      issuer: "Forage",
+      date: "13 Aug 2024",
+      link: "https://drive.google.com/file/d/1FBb8A88iIAGA6VARFH0ECmgAJYfHVUa9/view?usp=sharing",
+      image: Image.SEForage,
+    },
+    {
+      title: "Java (Basic)",
+      issuer: "HackerRank",
+      date: "16 Aug 2024",
+      link: "https://www.hackerrank.com/certificates/7537c56733c0",
+      image: Image.JavaBasic,
+    },
+    {
+      title: "Applied Skill",
+      issuer: "Google",
+      date: "01 Sep 2024",
+      link: "https://drive.google.com/file/d/1kEdkD2dni8Iy0NIiekO5nIvBAhUWa1w5/view?usp=sharing",
+      image: Image.GoogleApplied,
+    },
+    {
+      title: "Web Development Virtual Intern",
+      issuer: "CodeSoft",
+      date: "23 July 2024",
+      link: "https://drive.google.com/file/d/1LwZMpG0a9hYBocHquyZUu6mcolLdteI9/view?usp=sharing",
+      image: Image.CodeSoft,
+    },
+    {
+      title: "Resume Writing and Job Interviewing",
+      issuer: "HP Foundation",
+      date: "01 Feb 2025",
+      link: "https://www.life-global.org/certificate/2fc80309-9901-438e-8846-066857d5241d",
+      image: Image.ResumeHP,
+    },
+    {
+      title: "JavaScript (Basic)",
+      issuer: "HackerRank",
+      date: "3 Dec 2024",
+      link: "https://www.hackerrank.com/certificates/a801a87ad059",
+      image: Image.JavaScriptHackerRank,
+    },
+    {
+      title: "High Impact Presentation",
+      issuer: "Infosys Springboard",
+      date: "04 Aug 2024",
+      link: "https://drive.google.com/file/d/1nDgFPx7crHV23XH_45IcC16BiInz6Tmi/view?usp=sharing",
+      image: Image.PresentationInfys,
+    },
+    {
+      title: "Solutions Architecture Job Simulation",
+      issuer: "Forage",
+      date: "16 Aug 2024",
+      link: "https://drive.google.com/file/d/1aYl6YvK5GSDeYl_WMrp6orV5mABj8V3f/view?usp=sharing",
+      image: Image.AWSForage,
+    },
+    {
+      title: "CSS (Basic)",
+      issuer: "HackerRank",
+      date: "3 Dec 2024",
+      link: "https://www.hackerrank.com/certificates/9ca00cd992bf",
+      image: Image.CSSHackerRank,
+    },
+    {
+      title: "Time Management",
+      issuer: "Infosys Springboard",
+      date: "04 Aug 2024",
+      link: "https://drive.google.com/file/d/1r_A2KViyIHm_EBKsJAJD95iHGyigHugs/view?usp=sharing",
+      image: Image.TimeInfys,
+    },
+    {
+      title: "Effective Leadership",
+      issuer: "HP Foundation",
+      date: "01 Feb 2025",
+      link: "https://www.life-global.org/certificate/154fddd4-def7-4341-a507-694f416616a3",
+      image: Image.LeadershipHP,
+    },
+    {
+      title: "Introduction to NoSQL Databases",
+      issuer: "Infosys Springboard",
+      date: "01 Aug 2024",
+      link: "https://drive.google.com/file/d/1kom1QmS1p14Pz8Z-aM3S3NwbFG7JNypU/view?usp=sharing",
+      image: Image.NoSQLInfys,
+    },
+    {
+      title: "Developer and Technology Job Simulation",
+      issuer: "Forage",
+      date: "28 July 2024",
+      link: "https://drive.google.com/file/d/11FAyNCNZxT-ROsiRWn4-nFtxOI-zuFhR/view?usp=sharing",
+      image: Image.AccentureForage,
+    },
+    {
+      title: "Email Writing",
+      issuer: "Infosys Springboard",
+      date: "04 Aug 2024",
+      link: "https://drive.google.com/file/d/1f3W1OK4G9xygV8EjrzMAxj-gLMSB43Xt/view?usp=sharing",
+      image: Image.EmailInfys,
+    },
+    {
+      title: "Software Engineer Intern",
+      issuer: "HackerRank",
+      date: "03 Sep 2024",
+      link: "https://www.hackerrank.com/certificates/07bb32f4e032",
+      image: Image.SEInternHackerRank,
+    },
+  ];
 
   useEffect(() => {
     document.title = "Balram Shukla | Certficates";
