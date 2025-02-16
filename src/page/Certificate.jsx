@@ -52,7 +52,7 @@ export default function Certificates() {
       issuer: "Forage",
       date: "13 Aug 2024",
       link: "https://drive.google.com/file/d/1FBb8A88iIAGA6VARFH0ECmgAJYfHVUa9/view?usp=sharing",
-      image: ,
+      image: ""
     },
     {
       title: "Java (Basic)",
