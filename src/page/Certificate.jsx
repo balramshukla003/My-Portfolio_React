@@ -20,8 +20,7 @@ import NoSQLInfys from "../images/NoSQL infys.png";
 import AccentureForage from "../images/AccentureUk Forage.png";
 import EmailInfys from "../images/Email infys.png";
 import SEInternHackerRank from "../images/SE Intern HackerRank.png";
-
-import Project5 from "../images/Screenshot 2025-01-05 141626.png"
+import SeInfys from "../images/SE infys.png";
 
 export default function Certificates() {
 
@@ -31,7 +30,7 @@ export default function Certificates() {
       issuer: "TCS iON",
       date: "15 Jan 2025",
       link: "https://drive.google.com/file/d/1rt5FleSpSSiMq-Ygai0XWzSZVAml-wsr/view?usp=sharing",
-      image: Project5,
+      image: tcs,
     },
     {
       title: "AI for Beginners",
@@ -52,7 +51,7 @@ export default function Certificates() {
       issuer: "Forage",
       date: "13 Aug 2024",
       link: "https://drive.google.com/file/d/1FBb8A88iIAGA6VARFH0ECmgAJYfHVUa9/view?usp=sharing",
-      image: ""
+      image: SeInfys
     },
     {
       title: "Java (Basic)",
