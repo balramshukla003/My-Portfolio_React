@@ -1,6 +1,8 @@
 import { useRef, useEffect } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { FaCertificate } from 'react-icons/fa';
+
+
 import AIHp from "../images/AI Hp.png";
 import tcs from "../images/tcsIon.png";
 import SEInfys from "../images/SE infys.png";
@@ -23,20 +25,20 @@ import SEInternHackerRank from "../images/SE Intern HackerRank.png";
 
 export default function Certificates() {
 
-  const certificates = [
+  const certificate = [
     {
       title: "Career Edge - IT for Non-IT",
       issuer: "TCS iON",
       date: "15 Jan 2025",
       link: "https://drive.google.com/file/d/1rt5FleSpSSiMq-Ygai0XWzSZVAml-wsr/view?usp=sharing",
-      image: tcs
+      image: tcs,
     },
     {
       title: "AI for Beginners",
       issuer: "HP Foundation",
       date: "01 Jan 2025",
       link: "https://www.life-global.org/certificate/1f417f12-0930-40d7-a4f4-d58b63a81f6a",
-      image: AIHp
+      image: AIHp,
     },
     {
       title: "Software Engineering and Agile Software Development",
@@ -56,7 +58,7 @@ export default function Certificates() {
       title: "Java (Basic)",
       issuer: "HackerRank",
       date: "16 Aug 2024",
-      link: "https://www.hackerrank.com/certificates/7537c56733c0",
+      link: "https://www.hackerrank.com/certificate/7537c56733c0",
       image: JavaBasic,
     },
     {
@@ -84,7 +86,7 @@ export default function Certificates() {
       title: "JavaScript (Basic)",
       issuer: "HackerRank",
       date: "3 Dec 2024",
-      link: "https://www.hackerrank.com/certificates/a801a87ad059",
+      link: "https://www.hackerrank.com/certificate/a801a87ad059",
       image: JavaScriptHackerRank,
     },
     {
@@ -105,7 +107,7 @@ export default function Certificates() {
       title: "CSS (Basic)",
       issuer: "HackerRank",
       date: "3 Dec 2024",
-      link: "https://www.hackerrank.com/certificates/9ca00cd992bf",
+      link: "https://www.hackerrank.com/certificate/9ca00cd992bf",
       image: CSSHackerRank,
     },
     {
@@ -147,7 +149,7 @@ export default function Certificates() {
       title: "Software Engineer Intern",
       issuer: "HackerRank",
       date: "03 Sep 2024",
-      link: "https://www.hackerrank.com/certificates/07bb32f4e032",
+      link: "https://www.hackerrank.com/certificate/07bb32f4e032",
       image: SEInternHackerRank,
     },
   ];
@@ -165,7 +167,7 @@ export default function Certificates() {
   };
 
   return (
-    <div className="certificates-container">
+    <div className="certificate-container">
       <section className="cetificate-hero">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
@@ -187,7 +189,7 @@ export default function Certificates() {
 
       <motion.div
         ref={ref}
-        className="certificates-grid"
+        className="certificate-grid"
         initial="initial"
         animate={isInView ? "animate" : "initial"}
         variants={{
@@ -198,7 +200,7 @@ export default function Certificates() {
           }
         }}
       >
-        {certificates.map((cert, index) => (
+        {certificate.map((cert, index) => (
           <motion.div
             key={index}
             variants={cardVariants}
@@ -228,7 +230,7 @@ export default function Certificates() {
       </motion.div>
 
       <style jsx>{`
-        .certificates-container {
+        .certificate-container {
           background: #232946;
           color: #fffffe;
           min-height: 100vh;
@@ -255,7 +257,7 @@ export default function Certificates() {
           font-weight: 400;
         }
 
-        .certificates-grid {
+        .certificate-grid {
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
           gap: 2rem;
@@ -343,7 +345,7 @@ export default function Certificates() {
             font-size: 2.5rem;
           }
 
-          .certificates-grid {
+          .certificate-grid {
             grid-template-columns: 1fr;
           }
 
