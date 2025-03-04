@@ -20,7 +20,7 @@ export default function ProjectsPage() {
       title: "Market Place",
       description: "Solving the problem of Finding jobs and Hiring candidate, connects companies & job seekers",
       tags: ["React", "JSX", "CSS", "Node.js", "Express", "MongoDB"],
-      link: "#",
+      link: "https://marketplaceplatform.netlify.app/",
       github: Links.marketplace.github,
       image: Project1
     },
@@ -36,7 +36,7 @@ export default function ProjectsPage() {
       title: "Inno-Tech",
       description: "E-learning platform for both students and teachers, providing seamless and enjoyable user experience.",
       tags: ["Html", "CSS", "Node.js", "Express.js", "MySQL"],
-      link: "#",
+      link: "https://github.com/balramshukla003/Quiz_App-InnoTech",
       github: "https://github.com/balramshukla003/Quiz_App-InnoTech",
       image: Project2
     },
@@ -44,7 +44,7 @@ export default function ProjectsPage() {
       title: "Resturant Mangement System",
       description: "The Restaurant Website project aims to create an engaging and user-friendly platform for a fine dining restaurant. ",
       tags: ["Html", "CSS", "JavaScript", "MySQL"],
-      link: "#",
+      link: "https://github.com/balramshukla003/Resturant-Website",
       github: "https://github.com/balramshukla003/Resturant-Website",
       image: Project4
     },
