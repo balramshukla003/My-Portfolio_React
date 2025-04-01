@@ -4,7 +4,7 @@ import '../css/Navbar.css';
 
 const Navbar = () => {
 
-    const cvURL = "https://drive.google.com/file/d/1__ely_CUuNw7KIJM8E7UdblmdLVwbtAR/view?usp=sharing"
+    const cvURL = "https://drive.google.com/file/d/18v36b_DhKmd63tmZtNTGL2A4LUmh4fao/view?usp=drive_link"
     const [menuActive, setMenuActive] = useState(false);
 
     const Navigate = useNavigate();

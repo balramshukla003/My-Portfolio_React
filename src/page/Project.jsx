@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 
 import Links from "../api/Social-Links.json"
 
+import ProjectChat from "../images/Chatapplication.png"
 import Project1 from "../images/MarketPlace.png"
 import Project2 from "../images/Screenshot 2025-01-05 134854.png"
 import Project3 from "../images/Portfolio.png"
@@ -16,6 +17,14 @@ export default function ProjectsPage() {
   }, []);
   
   const projects = [
+    {
+      title: "Chat Apllication",
+      description: "Provide facility to chat with other user in real time, also can check the active user's using socket.io.",
+      tags: ["React", "Node.js", "Express", "MongoDB", "Socket.io", "MySQL"],
+      link: "",
+      github: Links.chatapplication.github,
+      image: ProjectChat
+    },
     {
       title: "Market Place",
       description: "Solving the problem of Finding jobs and Hiring candidate, connects companies & job seekers",

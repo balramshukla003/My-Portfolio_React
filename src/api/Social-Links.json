@@ -10,6 +10,10 @@
     "marketplace":{
         "github":"https://github.com/balramshukla003/Market-Place",
         "linked":""
+    },
+    "chatapplication":{
+        "github":"https://github.com/balramshukla003/Chat-Application",
+        "linked":""
     }
     
 }
