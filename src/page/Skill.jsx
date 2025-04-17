@@ -20,7 +20,7 @@ const Skill = () => {
             { name: 'Node.js', icon: <Icons.nodeJS color='rgb(42, 195, 0)'/> },
             { name: 'PHP', icon: '🐘' },
             { name: 'REST API', icon: '🔗' },
-            { name: 'doptnet', icon: <Icons.dotnet_i color='rgb(10, 148, 203)' /> },
+            { name: 'dotnet', icon: <Icons.dotnet_i color='rgb(10, 148, 203)' /> },
         ],
         database: [
             { name: 'MySQL', icon: <Icons.mysql_i color='Blue' /> },
