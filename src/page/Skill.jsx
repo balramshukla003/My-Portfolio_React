@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import '../css/Skill.css';
+import Icons from '../components/Icons';
 
 const Skill = () => {
-    
+
     useEffect(() => {
         document.title = "Balram Shukla | Skills";
     }, []);
@@ -11,30 +12,37 @@ const Skill = () => {
     const skills = {
         frontend: [
             { name: 'React', icon: '⚛️' },
-            { name: 'HTML', icon: '📄' },
+            { name: 'Flutter', icon: <Icons.Flutter_i color='skyBlue' /> },
+            { name: 'HTML', icon: <Icons.html_i color='orange' /> },
             { name: 'CSS', icon: '🎨' },
-            { name: 'JSX', icon: '🔷' },
         ],
         backend: [
-            { name: 'Node.js', icon: '🟢' },
-            { name: 'Express', icon: '🚀' },
+            { name: 'Node.js', icon: <Icons.nodeJS color='rgb(42, 195, 0)'/> },
+            { name: 'PHP', icon: '🐘' },
             { name: 'REST API', icon: '🔗' },
+            { name: 'doptnet', icon: <Icons.dotnet_i color='rgb(10, 148, 203)' /> },
         ],
         database: [
-            { name: 'MySQL', icon: '🛢️' },
-            { name: 'MongoDB', icon: '🍃' },
+            { name: 'MySQL', icon: <Icons.mysql_i color='Blue' /> },
+            { name: 'MongoDB', icon: <Icons.mongodb_i color='green' /> },
+            {
+                name: 'SQL Server', icon: <Icons.sqlserver_i color='rgb(226, 32, 7)' />
+            },
         ],
         languages: [
-            { name: 'JavaScript', icon: '📜' },
+            { name: 'JavaScript', icon: <Icons.javaSC color=' #f0db4f' /> },
             { name: 'Java', icon: '♨️' },
-            { name: 'Python', icon: '🐍' },
-            { name: 'C++', icon: 'C++' },
+            { name: 'Python', icon: <Icons.python_i color='blue' /> },
+            { name: 'C++', icon: <Icons.c_i color='rgb(3, 112, 246)' /> },
+            { name: 'C-Sharp', icon: <Icons.cSharp /> },
         ],
         developmentEnvironments: [
-            { name: 'VS Code', icon: '🆚' },
+            { name: 'VS Code', icon: <Icons.vsCode color='rgba(46, 5, 209, 0.92)' /> },
+            { name: 'Visual Studio', icon: <Icons.ViS color='purple' /> },
             { name: 'IntelliJ IDEA', icon: '👨🏻‍💻' },
             { name: 'Chrome Dev Tool', icon: '🔧' },
-            { name: 'Github', icon: '</>' },
+            { name: 'Github', icon: <Icons.Github /> },
+            { name: 'WinMerge', icon: '🧮' },
         ],
     };
 
@@ -104,11 +112,10 @@ const Skill = () => {
 // Styling
 const styles = {
     container: {
-        margin: '2rem',
         padding: '2rem',
         backgroundColor: '#232946',
-        borderRadius: '15px',
-        boxShadow: '0 10px 30px rgba(0,0,0,0.3)',
+        minHeight: '75vh'
+        // boxShadow: '0 10px 30px rgba(0,0,0,0.3)',
     },
     title: {
         textAlign: 'center',
@@ -145,11 +152,11 @@ const styles = {
     },
     card: {
         backgroundColor: '#232946',
-        padding: '1rem',
         borderRadius: '8px',
         display: 'flex',
         alignItems: 'center',
         gap: '1rem',
+        padding: '2px 5px',
         transition: 'all 2s ease',
     },
     icon: {

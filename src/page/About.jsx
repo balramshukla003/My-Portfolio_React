@@ -18,7 +18,7 @@ export default function About() {
                         <h1 className="gradient-heading">Crafting Digital Experiences</h1>
                         <p className="subtitle">Full-Stack Developer & Problem Solver</p>
                         <p className="description">
-                            I'm a passionate developer eager to create immersive web experiences. I focus on bridging the gap between design and technology, striving to deliver applications that are both functional and visually appealing.
+                            I'm a passionate developer eager to create immersive user experiences. I focus on bridging the gap between UI/UX and technology, striving to deliver applications that are both functional and visually appealing.
                         </p>
                         <div className="social-links">
                             <a href={Links.github} target="_blank" rel="noopener noreferrer">
@@ -42,27 +42,27 @@ export default function About() {
                     <div className="skill-card">
                         <FaReact className="skill-icon" />
                         <h3>Frontend</h3>
-                        <p>Html, Css, JSX, React</p>
+                        <p>Html, Css, JSX, React, Flutter</p>
                     </div>
                     <div className="skill-card">
                         <FaNodeJs className="skill-icon" />
                         <h3>Backend</h3>
-                        <p>Node.js, Express, REST APIs</p>
+                        <p>Node.js, Express.js, REST APIs, PHP, dotnet</p>
                     </div>
                     <div className="skill-card">
                         <LuDatabase className="skill-icon" />
                         <h3>Databases</h3>
-                        <p>MongoDB, MySQL</p>
+                        <p>MongoDB, MySQL, SQL Server</p>
                     </div>
                     <div className="skill-card">
                         <FaCode className="skill-icon" />
                         <h3>Tools</h3>
-                        <p>VS Code, IntelliJ Idea, ChromeDev Tool</p>
+                        <p>VS Code, Visual Studio, IntelliJ Idea, ChromeDev Tool, WinMerge, Libree Office</p>
                     </div>
                     <div className="skill-card">
                         <FaLaptopCode className="skill-icon" />
                         <h3>Languages</h3>
-                        <p>Java, JavaScript, C++</p>
+                        <p>Java, JavaScript, C++, Python, CSharp</p>
                     </div>
                 </div>
             </section>
