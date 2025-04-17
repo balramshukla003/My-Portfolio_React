@@ -47,7 +47,7 @@ const Navbar = () => {
                 <li><Link to="/projects" onClick={() => { CheckMenuActive() }}>Projects</Link></li>
                 <li><Link to="/certificate" onClick={() => { CheckMenuActive() }}
                 >Certificates</Link></li>
-                <li><a href={cvURL}>Resume</a></li>
+                <li><a href={cvURL} target="_blank" rel="noopener noreferrer">Resume</a></li>
             </ul>
         </nav>
     );
